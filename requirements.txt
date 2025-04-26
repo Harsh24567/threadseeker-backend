@@ -1,6 +1,6 @@
-sentence-transformers==2.2.2
-torch==2.0.1
 Flask
 flask-cors
-requests
+sentence-transformers==2.2.2
+huggingface-hub==0.10.1
+transformers
 
