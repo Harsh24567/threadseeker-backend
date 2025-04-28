@@ -3,7 +3,7 @@ import json
 from typing import List, Dict
 from sentence_transformers import SentenceTransformer, util
 
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 
 def load_threads(file_path: str = None) -> List[Dict]:
     """
