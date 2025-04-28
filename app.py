@@ -38,6 +38,11 @@ def semantic_thread_api():
         traceback.print_exc()
         return jsonify({"error": f"Semantic search failed: {str(e)}"}), 500
 
+@app.route('/')
+def home():
+    return "Hello from Flask on Render!"
+
+
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000)) 
+    port = int(os.environ.get('PORT', 10000))
     app.run(host="0.0.0.0", port=port)
